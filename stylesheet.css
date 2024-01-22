@@ -1,6 +1,6 @@
-*{
+/* *{
     border: solid 1px black;
-}
+} */
 
 .container{
     display: flex;
@@ -20,12 +20,13 @@
     background-repeat: repeat-y;
 }
 
+
 .logoContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: black;
-    opacity:0.33;
+    background-color: rgba(0, 0, 0, 0.333);
+
+    
 }
 
 .logo{
@@ -36,6 +37,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+   
+    
 }
 
 @font-face{
@@ -47,7 +50,8 @@
     flex:1 1 auto;
     font-family: norse-bold, sans-serif;
     color: white;
-    font-size: 128px;
+    font-size: 64px;
+    
 
 }
 
@@ -59,6 +63,7 @@
 
 .body>*{
     flex: 1;
+    /* background-color: white; */
 }
 .topCard{
     position: relative;
@@ -71,11 +76,22 @@
 }
 
 .middleCard{
-    
+    box-shadow: 0px 0px 5px black;
 }
 
+
 fieldset{
+    border: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:left;
+}
+
+p{
+    padding-right: 28px;
+}
+
+.bottomCard{
+    padding: 24px;
+    
 }
